@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Narrating the Video: Boosting Text-Video Retrieval via Comprehensive
+        Utilization of Frame-Level Captions (narration).">
+  <meta name="keywords" content="NarVid, Narrating the video, Text-video retrieval, TVR, narration">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Narrating the Video: Boosting Text-Video Retrieval via Comprehensive
+    Utilization of Frame-Level Captions</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Narrating the Video: Boosting Text-Video Retrieval via Comprehensive
+            Utilization of Frame-Level Captions</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=en&user=aOc_KKEAAAAJ">Chan Hur</a><sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://invhun.github.io/en/about/">Jeong-hun Hong</a><sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=nGogINkAAAAJ&hl=en">Dong-hun Lee</a>,
+            </span>
+            <span class="author-block">
+              <a href="">Dabin Kang</a>,
+            </span>
+            <span class="author-block">
+              <a href="">Semin Myeong</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=ZG8REuYAAAAJ&hl=en">Sang-hyo Park</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=rP8xQqYAAAAJ&hl=en">Hyeyoung Park</a><sup>†</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">School of Computer Science and Engineering, Kyungpook National University</span>
+          </div>
+          <div class="is-size-6">
+            <span class="author-block">*Equal Contribution, †Corresponding Author</span>
+          </div>
+          <div class="is-size-4">
+            <span class="author-block">CVPR 2025</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/invhun/narvid"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/invhun/narvid/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In recent text-video retrieval, the use of additional captions from vision-language models has shown promising effects on the performance.
+            However, existing models using additional captions often have struggled to capture the rich semantics,
+            including temporal changes, inherent in the video. In addition, incorrect information caused by generative models can lead to inaccurate retrieval.
+          </p>
+          <p>
+            To address these issues, we propose a new framework, Narrating the Video (NarVid),
+            which strategically leverages the comprehensive information available from frame-level captions, the narration.
+            The proposed NarVid exploits narration in multiple ways:
+            1) feature enhancement through cross-modal interactions between narration and video,
+            2) query-aware adaptive filtering to suppress irrelevant or incorrect information,
+            3) dual-modal matching score by adding query-video similarity and query-narration similarity, and
+            4) hard-negative loss to learn discriminative features from multiple perspectives using the two similarities from different views.
+            Experimental results demonstrate that NarVid achieves state-of-the-art performance on various benchmark datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Section -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/framework.png" alt="NarVid Framework" class="image is-centered">
+          <p></p>
+          <p>
+            The method first generates frame-level captions (narration) for each video.
+            Using the frame-level features of the video and narration, enhanced features are obtained through cross-modal interaction with co-attention
+            and temporal block. (a) These enhanced features are further refined using query-aware adaptive filtering. (b) Then, the query-video and
+            query-narration similarity matrices obtained through the multi-granularity matching are utilized for training and inference. (c) To enhance
+            the discriminative ability of the model, we additionally use a cross-view hard negative loss during training.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method Section -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Results Section -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">Qualitative Results</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/qualitative.png" alt="Qualitative Results" class="image is-centered">
+          <p></p>
+          <p>
+            To analyze the effectiveness of using narration in text-video retrieval,
+            we provide examples of retrieval results and generated frame-level captions for three datasets: 
+            MSVD<sup>1</sup>, VATEX<sup>2</sup>, and DiDeMo<sup>3</sup>. Additionally, we include examples of incorrect results due to short and general queries.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Results Section -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{,
+  author    = {Chan Hur and Jeong-hun Hong and Dong-hun Lee and Dabin Kang and Semin Myeong and Sang-hyo Park and Hyeyoung Park},
+  title     = {Narrating the Video: Boosting Text-Video Retrieval via Comprehensive
+    Utilization of Frame-Level Captions},
+  journal   = {},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+<section class="section" id="References">
+  <div class="container is-max-desktop content">
+    <h2 class="title">References</h2>
+    <ol>
+      <li>
+        David Chen and William B Dolan. Collecting highly paral-
+lel data for paraphrase evaluation. In Proceedings of the 49th
+annual meeting of the association for computational linguis-
+tics: human language technologies, pages 190–200, 2011. 
+      </li>
+      <li>
+        Xin Wang, Jiawei Wu, Junkun Chen, Lei Li, Yuan-Fang
+        Wang, and William Yang Wang. Vatex: A large-scale, high-
+        quality multilingual dataset for video-and-language research.
+        In Proceedings of the IEEE/CVF international conference on
+        computer vision, pages 4581–4591, 2019.
+      </li>
+      <li>
+        Lisa Anne Hendricks, Oliver Wang, Eli Shechtman, Josef
+        Sivic, Trevor Darrell, and Bryan Russell. Localizing mo-
+        ments in video with natural language. In Proceedings of
+        the IEEE international conference on computer vision, pages
+        5803–5812, 2017.
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is adapted from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
