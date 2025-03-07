@@ -1,6 +1,6 @@
 # Narrating the Video (NarVid)
 
-This is the repository that contains source code for the [NarVid](https://narrating-the-video.github.io).
+This is the repository that contains source code for the [NarVid](https://multimodal-understanding-group.github.io/NarVid/).
 
 If you find NarVid useful for your work please cite:
 ```
