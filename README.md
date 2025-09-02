@@ -4,11 +4,13 @@ This is the repository that contains source code for the [NarVid](https://multim
 
 If you find NarVid useful for your work please cite:
 ```
-@article{hur2025narratingthevideo,
-  author    = {Chan Hur and Jeong-hun Hong and Dong-hun Lee and Dabin Kang and Semin Myeong and Sang-hyo Park and Hyeyoung Park},
-  title     = {Narrating the Video: Boosting Text-Video Retrieval via Comprehensive Utilization of Frame-Level Captions},
-  journal   = {arXiv preprint arXiv:2503.05186},
-  year      = {2025},
+@InProceedings{Hur_2025_CVPR,
+    author    = {Hur, Chan and Hong, Jeong-hun and Lee, Dong-hun and Kang, Dabin and Myeong, Semin and Park, Sang-hyo and Park, Hyeyoung},
+    title     = {Narrating the Video: Boosting Text-Video Retrieval via Comprehensive Utilization of Frame-Level Captions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {24077-24086}
 }
 ```
 
